@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart-Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@200;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/Cart.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <main>
+        <section class="cart-section">
+            <div class="Contact">
+                <h1 class="Contact-heading">My Cart</h1>
+            </div>
+            <div class="cart-description">
+                <div class="Product-heading">
+                    <h2 class="cart-description-heading1">Product</h2>
+                </div>
+                <div class="Quantity-heading">
+                    <h2 class="cart-description-heading1">Quantity</h2>
+                    <h2 class="cart-description-heading1">Final Price</h2>
+                </div>
+            </div>
+            <div class="final-price">
+                <div class="final1">
+                    <div class="product-plate1">
+                        <div class="grid-one">
+                            <img class="plate-img-heading-one" src="/image/cup.jpg" alt="" />
+                        </div>
+                        <h1 class="final1-heading-block">AFB11.25x11.25</h1>
+                        <h1 class="final1-heading">Cups</h1>
+                    </div>
+                    <div class="product-plate2">
+                        <div class="add-sub-six">
+                            <button class="btn-minus">
+                                <span class="operatus">-</span>
+                            </button>
+                            <input type="number" name="increasing-number" class="increasing-number" placeholder="1">
+                            <button class="btn-plus">
+                                <span class="operatus">+</span>
+                            </button>
+                        </div>
+                        <span class="product-plate2-content">$1</span>
+                        <button class="btn-delete" onclick="deleteContainer('cartSection1')">
+                            <img src="/image/noun-delete-4507766 1.png" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div class="plate-description2">
+                    <div class="step1-quantity">
+                        <h1>Select Delivery Method</h1>
+                    </div>
+                    <div class="size-inline">
+                        <div class="size-block">
+                            <div class="size">
+                                <input type="radio" name="btn" class="size-red" />
+                                <label for="btn" class="size-heading">Deliver one-time</label>
+                            </div>
+                            <div class="size">
+                                <input type="radio" name="btn" class="size-red step2-size-aqua" />
+                                <label for="btn" class="size-heading">Auto deliver every</label>
+                            </div>
+                        </div>
+                        <div class="third-month">
+                            <p  class="third-month-heading">3 month</p>
+                            <img src="/image/down.png" class="third-month-image" alt="" />
+                            <div class="dropdown-content1 dropdown-content-down" id="myDropdown">
+                                <a href="#">My Cart</a>
+                                <a href="#">Checkout</a>
+                                <a href="#">My Orders</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="percentage-heading">Save 5% with Auto Delivery</p>
+                </div>
+            </div>
+        </section>
+        <section class="cart-section">
+            <div class="final-price">
+                <div class="final1">
+                    <div class="product-plate1">
+                        <div class="grid-one">
+                            <img class="plate-img-heading-one" src="/image/cup.jpg" alt="" />
+                        </div>
+                        <h1 class="final1-heading-block">AFB11.25x11.25</h1>
+                        <h1 class="final1-heading">Cups</h1>
+                    </div>
+                    <div class="product-plate2">
+                        <div class="add-sub-six">
+                            <button class="btn-minus">
+                                <span class="operatus">-</span>
+                            </button>
+                            <input type="number" name="increasing-number" class="increasing-number" placeholder="1">
+                            <button class="btn-plus">
+                                <span class="operatus">+</span>
+                            </button>
+                        </div>
+                        <span class="product-plate2-content">$1</span>
+                        <button class="btn-delete" onclick="deleteContainer('cartSection2')">
+                            <img src="/image/noun-delete-4507766 1.png" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div class="plate-description2">
+                    <div class="step1-quantity">
+                        <h1>Select Delivery Method</h1>
+                    </div>
+                    <div class="size-inline">
+                        <div class="size-block">
+                            <div class="size">
+                                <input type="radio" name="btn" class="size-red" />
+                                <label for="btn" class="size-heading">Deliver one-time</label>
+                            </div>
+                            <div class="size">
+                                <input type="radio" name="btn" class="size-red step2-size-aqua" />
+                                <label for="btn" class="size-heading">Auto deliver every</label>
+                            </div>
+                        </div>
+                        <div class="third-month">
+                            <p class="third-month-heading">3 month</p>
+                            <img src="/image/down.png" class="third-month-image"alt="" />
+                            <div class="dropdown-content1 dropdown-content-down" id="myDropdown">
+                                <a href="#">My Cart</a>
+                                <a href="#">Checkout</a>
+                                <a href="#">My Orders</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="percentage-heading">Save 5% with Auto Delivery</p>
+                </div>
+            </div>
+        </section>
+        <section class="coupn-and-subtotal-section">
+            <div class="coupon-subtotal">
+                <div class="coupon-container">
+                    <form class="coupon">
+                        <input type="password" class="coupon-code" id="coupon-code" placeholder="Coupon Code" />
+                        <div class="apply-coupon">
+                            <button type="submit" class="apply-coupon-content">
+                                <span class="apply-btn">Apply Coupon</span><span class="add-btn">Add</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="april-delivery">
+                        <h1 class="appril-delivery-heading">Select Delivery Time</h1>
+                        <div class="Delivery-time">
+                            <h1>Select Delivery Method</h1>
+                        </div>
+                        <div class="monday-april">
+                            <div class="april-17">
+                                <h2 class="april-17-heading">17</h2>
+                                <h2 class="april-18-heading">18</h2>
+                                <p class="april-17-content">
+                                    April, <br />
+                                    2023 Monday
+                                </p>
+                                <a href="">
+                                    <span class="april-17-desc">$4.99</span>
+                                </a>
+                            </div>
+                            <div class="april-17">
+                                <h2 class="april-17-heading">17</h2>
+                                <h2 class="april-18-heading">18</h2>
+                                <p class="april-17-content">
+                                    April, <br />
+                                    2023 Monday
+                                </p>
+                                <a href="">
+                                    <span class="april-17-desc">Free</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtotal-shiping">
+                    <div class="subtotal">
+                        <h2 class="subtotal-heading">Subtotal</h2>
+                        <a href="">
+                            <span class="coupn-and-subtotal-desc">$97.74</span>
+                        </a>
+                    </div>
+                    <div class="white-line">
+                        <hr class="hr-white" />
+                    </div>
+                    <div class="shipping">
+                        <div class="subtotal">
+                            <h2 class="subtotal-heading">Shipping Free</h2>
+                            <a href="">
+                                <span class="coupn-and-subtotal-desc">$12.00</span>
+                            </a>
+                        </div>
+                        <div class="shipping2">
+                            <p class="shipping2-content">
+                                * extra Shipping Fee of $30 will be required to the states of
+                                Hawaii, Alaska, & Puerto Rico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="white-line">
+                        <hr class="hr-white" />
+                    </div>
+                    <div class="subtotal">
+                        <h2 class="subtotal-heading">Estimated Total</h2>
+                        <a href="">
+                            <span class="coupn-and-subtotal-desc">$109.74</span>
+                        </a>
+                    </div>
+                    <a class="proceed-chekout" href="checkout.html">
+                        <button class="btn-proceed proceed-heading">Proceed to Checkout</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="product-section">
+            <div class="product">
+                <h1 class="product-heading">See our products below</h1>
+                <p class="product-content-see contents">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod temp incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="box-grid">
+                <div class="box-grid-flex">
+                    <div class="grid1">
+                        <img class="plate-img-heading" src="/image/untensil (2).jpg" alt="" />
+                        <a href="https://ecotableware.com.au/collections/plates">
+                            <h2 class="grid1--heading">Plates</h2>
+                        </a>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                    <div class="grid1">
+                        <img class="plate-img-heading" src="/image/bowl.jpg" alt="" />
+                        <a href="https://ecotableware.com.au/collections/bowls">
+                            <h2 class="grid1--heading">Bowls</h2>
+                        </a>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="box-grid-flex">
+                    <div class="grid1">
+                        <img class="plate-img-heading" src="/image/cup.jpg" alt="" />
+                        <a href="https://ecotableware.com.au/collections/cups">
+                            <h2 class="grid1--heading">Cups</h2>
+                        </a>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                    <div class="grid1">
+                        <img class="plate-img-heading" src="/image/untensil (1).jpg" alt="" />
+                        <a href="https://ecotableware.com.au/collections/cutlery">
+                            <h2 class="grid1--heading">Utensils</h2>
+                        </a>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <button class="btn-secondary">see all products</button>
+            </a>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="js/Cart.js"></script>
+</body>
+
+</html>

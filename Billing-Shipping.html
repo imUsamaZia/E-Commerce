@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Shipping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@200;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/Billing-Shipping.css" />
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $('#header').load('header.html')
+        })
+    </script>
+    <main>
+        <section class="Billing-Shipping-section">
+            <div class="Contact">
+                <h1 class="Contact-heading">Billing & Shipping</h1>
+            </div>
+            <div class="order-section">
+                <div class="my-order">
+                    <a href="#" class="contact-button">
+                        <button class="btn-contact">
+                            <span class="contact-icon"><i class="fa-solid fa-circle-user"></i> </span>
+                            <span class="contact-text">My Order</span>
+                        </button>
+                    </a>
+                    <a href="#" class="contact-button">
+                        <button class="btn-contact">
+                            <span class="contact-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <span class="contact-text">Subscription</span>
+                        </button>
+                    </a>
+                    <a href="#" class="contact-button">
+                        <button class="btn-contact">
+                            <span class="contact-icon"><i class="fa-solid fa-user-gear"></i></span>
+                            <span class="contact-text">Billing & Shipping</span>
+                        </button>
+                    </a>
+                    <a href="#" class="contact-button">
+                        <button class="btn-contact">
+                            <span class="contact-icon"><i class="fa-solid fa-truck"></i></span>
+                            <span class="contact-text">Account Setting</span>
+                        </button>
+                    </a>
+                    <a href="#" class="contact-button">
+                        <button class="btn-contact">
+                            <span class="contact-icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                            <span class="contact-text">Log Out</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="final-large-section">
+                    <div class="all-order-heading">
+                        <h2 class="order-content">Billing & Shipping</h2>
+                        <hr class="order-line">
+                    </div>
+                    <div class="billing-shiping">
+                        <div class="default-biling">
+                            <h2 class="default-heading">Default billing address</h2>
+                            <a href="contact.html">
+                                <span class="default-desc1">Mr. Jhon Doe</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                                <span class="default-desc1">JhonDoe@gmail.com</span>
+                            </a>
+                            <a href="https://www.google.com/maps/@31.5300368,74.3470166,15z?authuser=0&entry=ttu">
+                                <address class="default-desc1">123,HSR Layout, Bengaluru, 560102</address>
+                            </a>
+                            <a href="contact.html">
+                                <span class="default-desc1">+91 12345-12345</span>
+                            </a>
+                            <a class="billing-underline" href="#">
+                                <span class="default-desc2">Change Billing Address</span>
+                            </a>
+                        </div>
+                        <div class="default-biling">
+                            <h2 class="default-heading">Default shipping address</h2>
+                            <a href="contact.html">
+                                <span class="default-desc1">Mr. Jhon Doe</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                                <span class="default-desc1">JhonDoe@gmail.com</span>
+                            </a>
+                            <a href="https://www.google.com/maps/@31.5300368,74.3470166,15z?authuser=0&entry=ttu">
+                                <address class="default-desc1">123,HSR Layout, Bengaluru, 560102</address>
+                            </a>
+                            <a href="contact.html">
+                                <span class="default-desc1">+91 12345-12345</span>
+                            </a>
+                            <a class="billing-underline" href="#">
+                                <span class="default-desc2">Change Billing Address</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="save-card">
+                        <div class="add-new-card">
+                            <button class="save-card-btn">
+                                <p class="save-card-heading">Save Cards</p>
+                            </button>
+                            <button class="new-card-btn">
+                                <p class="new-card-heading ">Add New Card</p>
+                            </button>
+                        </div>
+                        <div class="Credit-Content">
+                            <div class="credit-card">
+                                <label class="card-star">
+                                    <div class="cart-start-content">
+                                        <input class="card-star-heading" type="text" name="" id="card1-input" placeholder="Accendo Banco Credit Card">
+                                        <span class="star-digit">**** **** **** 0234</span>
+                                    </div>
+                                    <button type="button" class="btn-edit" onclick="focusOn(1)">EDIT</button>
+                                </label>
+                                
+                                <button class="btn-delete">
+                                    <img src="/image/noun-delete-4507766 1.png" alt="">
+                                </button>
+                            </div>
+                            <div class="credit-card">
+                                <div class="card-star">
+                                    <div class="cart-start-content">
+                                        <input class="card-star-heading" type="text" name="" id="card2-input" placeholder="Accendo Banco Credit Card">
+                                        <span class="star-digit">**** **** **** 0234</span>
+                                    </div>
+                                    <button type="button" class="btn-edit" onclick="focusOn(2)">EDIT</button>
+                                </div>
+                                <button class="btn-delete">
+                                    <img src="/image/noun-delete-4507766 1.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $('#footer').load('footer.html')
+        })
+    </script>
+    <script src="js/Billing-Shipping.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@200;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $('#header').load('header.html')
+        })
+    </script>
+    <main>
+        <section class="contact-section">
+            <div class="Contact">
+                <h1 class="Contact-heading">Contact Us</h1>
+            </div>
+            <div class="scetion-pictures">
+                <div class="dorimon">
+                    <div class="dorimon-img">
+                        <a href="product.html">
+                            <img src="/image/mdi_customer-service.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="dorimon-content">
+                        <h3 class="dorimon-heading">customer services</h3>
+                        <p class="dorimon-desc">Get in touch or track an order.</p>
+                    </div>
+                </div>
+                <div class="dorimon">
+                    <div class="dorimon-img">
+                        <a href="order.html">
+                            <img class="dorimon-image" src="/image/fa-solid_shipping-fast.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="dorimon-content">
+                        <h3 class="dorimon-heading">Shipping & Returns</h3>
+                        <p class="dorimon-desc">Learn about shipping policies..</p>
+                    </div>
+                </div>
+                <div class="dorimon">
+                    <div class="dorimon-img">
+                        <a href="single-product.html">
+                            <img src="/image/mdi_customer-service (1).svg" alt="">
+                        </a>
+                    </div>
+                    <div class="dorimon-content">
+                        <h3 class="msg-heading">Frequently Asked Questions</h3>
+                        <h3 class="FAQs-heading">FAQs</h3>
+                        <p class="dorimon-desc">Get in touch or track an order.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer-service-section">
+            <div class="section-ten-content">
+                <h1 class="section-ten-heading">Our Customer Service Team is Here to Help</h1>
+            </div>
+            <div class="service-helper">
+                <div class="live-mail">
+                    <div class="live-chat ">
+                        <a class="dorimon-imges href="">
+                            <img src="/image/Vector (3).png" alt="">
+                        </a>
+                        <h4 class="dorimon-headings ">Live chat </h4>
+                        <a href="">
+                            <p class=" question-desc ">chat now</p>
+                        </a>
+                    </div>
+                    <div class="live-chat">
+                        <a class="dorimon-imges" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                            <img src="/image/material-symbols_mark-email-read-outline.png" alt="">
+                        </a>
+                        <h4 class="dorimon-headings">Email Us </h4>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                            <p class=" question-desc">info@filterbuy.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="live-mail">
+                    <div class="live-chat">
+                        <a class="dorimon-imges " href="contact.html">
+                            <img src="/image/ic_baseline-phone.png" alt="">
+                        </a>
+                        <h4 class="dorimon-headings">Call Us</h4>
+                        <a href="contact.html">
+                            <p class="question-desc">03098943008</p>
+                        </a>
+                    </div>
+                    <div class="live-chat1">
+                        <a class="dorimon-imges" href="https://www.facebook.com/?ref=homescreenpwa">
+                            <img src="/image/uil_facebook-f.png" alt="">
+                        </a>
+                        <h4 class="dorimon-headings">Facebook</h4>
+                        <a href="https://www.facebook.com/?ref=homescreenpwa">
+                            <p class="question-desc">Message Us 24/7.</p>
+                        </a>
+                    </div>
+                    <div class="live-chat2">
+                        <a class="dorimon-imges" href="">
+                            <img src="/image/Location.png" alt="">
+                        </a>
+                        <h4 class="dorimon-headings ">Warehouse</h4>
+                        <a href="">
+                            <p class="question-desc">4000 Greenbriar Dr. Ste.200,Stafford, TX 77477</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+              <section class="send-message-section">
+            <div  class="Message-content">
+                <h1 class="Message-heading">Send Us A Message</h1>
+                <p class="Message-desc">For questions, comments or suggestions, please use this contact form.</p>
+            </div>
+            <form action="#" class="send-message" method="post">
+                <div class="first-message">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="mail-phone-msg">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                    <textarea id="inquiry" placeholder="Inquiry..."></textarea>
+                </div>
+                <button class="btn-secondary" type="submit">send message</button>
+            </form>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $('#footer').load('footer.html')
+        })
+    </script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

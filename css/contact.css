@@ -1,0 +1,858 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-section-color: #fcf7ef;
+  --primary-container-color: #E1E2DA;
+  --secondary-white-heading: #ffffff;
+  --secondary-color: #385f59;
+  --accent-color: #d75d39;
+}
+/* CONTACT-SECTION */
+.contact-section {
+  background-color: var(--primary-section-color);
+  padding-bottom: 3rem;
+}
+
+.scetion-pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.Contact {
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+}
+
+.Contact-heading {
+  color: var(--secondary-white-heading);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.contact-section {
+  background-color: var(--primary-section-color);
+}
+
+.dorimon {
+  width: 380px;
+  height: 362px;
+  border-radius: 10px;
+  background: var(--secondary-color);
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dorimon-img {
+  width: 115px;
+  height: 115px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dorimon-content{
+  text-align: center;
+}
+.dorimon-heading {
+  color: var(--secondary-white-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.msg-heading {
+  color: var(--secondary-white-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.FAQs-heading {
+  color: var(--secondary-white-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  display: none;
+}
+
+.dorimon-desc {
+  color: var(--secondary-white-heading);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: .3rem;
+}
+
+/* .question-descs {
+  color: var(--secondary-white-heading);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: center;
+} */
+
+@media screen and (max-width: 480px) {
+  .scetion-pictures {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .dorimon {
+    width: 350px;
+    height: 106px;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .dorimon-img {
+    width: 60px;
+    height: 60px;
+  }
+  .Contact {
+    height: 75px;
+    font-size: 2.6rem;
+  }
+  .Contact-heading {
+    font-size: 2.6rem;
+
+  }
+  .dorimon-img img {
+    width: 50px;
+
+  }
+
+  .dorimon-img .dorimon-image {
+    width: 40px;
+  }
+
+  .dorimon-heading {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+  }
+  .msg-heading {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    display: none;
+  }
+  .FAQs-heading {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .dorimon-desc {
+    font-size: 15px;
+    margin-left: 0rem;
+  }
+
+  .span-none {
+    display: none;
+  }
+}
+/* CUSTOMER-SERVICE-SECTION */
+.customer-service-section {
+  background: var(--primary-container-color);
+}
+
+.section-ten-content {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.icon-flex{
+  display: flex;
+}
+.section-ten-heading {
+  color: #3A3A3A;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.service-helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  padding: 7rem;
+}
+
+.live-mail {
+  gap: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.live-chat1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.live-chat2 {
+  display: none;
+}
+
+.dorimon-headings{
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.dorimon-imges {
+  width: 125px;
+  height: 125px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb-mail-cal {
+  margin-left: 3rem;
+}
+
+.question-desc {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: .3rem;
+}
+.live-chat2 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .live-chat1 {
+    display: none;
+  }
+
+  .live-chat2 {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .question-desc {
+font-size: 1.4rem;
+  }
+  .dorimon-headings{
+    font-size: 1.8rem;
+ 
+  }
+  .service-helper {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 7rem 7rem 7rem;
+  }
+
+  .section-ten-content {
+    margin: 0 3rem;
+  }
+
+  .section-ten-heading {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .dorimon-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .live-mail {
+    gap: 6rem;
+    align-items: flex-start;
+
+  }
+
+  .fb-mail-cal {
+    margin-left: 0rem;
+  }
+}
+
+/* SEND-MESSAGE-SECTION */
+/* .send-message-section{
+  background: var(--primary-section-color);
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+}
+.Message-desc{
+  color: #3A3A3A;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.Message-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Message-heading {
+  color: #3A3A3A;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.first-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.first-message input{
+  width: 450px;
+height: 60px;
+padding: 0 3rem;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+font-size: 2rem;
+background: #FCF7EF;
+outline: 0;
+}
+.first-message input::placeholder, 
+.mail-phone-msg input::placeholder, 
+.mail-phone-msg textarea::placeholder{
+  font-size: 2rem;
+  color: #5E5E5E;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 400;
+}
+.mail-phone-msg input{
+  width: 985px;
+height: 60px;
+padding: 0 3rem;
+font-size: 2rem;
+outline: 0;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+background: var(--primary-section-color);
+margin-top: 2rem;
+}
+.mail-phone-msg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+}
+.mail-phone-msg textarea{
+  width: 1005px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  outline: 0;
+  padding: 2rem;
+height: 200px;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+background: var(--primary-section-color);
+resize: none;
+}
+.btn-secondary {
+  width: 259px;
+  height: 48px;
+  display: block;
+  margin: 4rem auto;
+  border-radius: 20120px;
+  background: var(--accent-color);
+  color: var(--secondary-white-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .send-message-section{
+    padding-bottom: 0rem;
+    padding-top: 0;
+  }
+  .Message-desc{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 1rem;
+
+  }
+  .Message-heading{
+    font-size: 2.6rem;
+  }
+  .first-message{
+    gap: 1rem;
+  }
+  .first-message input{
+    width: 150px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  }
+  .first-message input::placeholder,
+   .mail-phone-msg input::placeholder, 
+   .mail-phone-msg textarea::placeholder{
+    font-size: 1.3rem;
+  }
+  .mail-phone-msg input{
+    width: 334px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  }
+  .mail-phone-msg textarea{
+    width: 334px;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    padding: 1rem;
+  height: 100px;
+  }
+  .btn-secondary {
+    width: 350px;
+    height: 62px;
+    margin: 2.3rem auto;
+
+  }
+} */
+.send-message-section{
+  background: var(--background-color);
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.Message-desc{
+  color: var(--heading-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.Message-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Message-heading {
+  color: var(--heading-color);
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.first-message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.first-message input{
+  width: 494px;
+height: 60px;
+padding: 0 3rem;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+font-size: 2rem;
+background: #FCF7EF;
+outline: 0;
+}
+.first-message input::placeholder, 
+.mail-phone-msg input::placeholder, 
+.mail-phone-msg textarea::placeholder{
+  font-size: 2rem;
+  color: #5E5E5E;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 400;
+}
+.mail-phone-msg input{
+  width: 1067px;
+height: 60px;
+padding: 0 3rem;
+font-size: 2rem;
+outline: 0;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+background: var(--primary-section-color);
+margin-top: 2rem;
+}
+.mail-phone-msg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+}
+.mail-phone-msg textarea{
+  width: 1087px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  outline: 0;
+  padding: 2rem;
+height: 200px;
+border-radius: 10px;
+border: 1px solid rgba(56, 95, 89, 0.35);
+background: var(--primary-section-color);
+resize: none;
+}
+.btn-secondary {
+  width: 259px;
+  height: 48px;
+  display: block;
+  margin: 4rem auto;
+  border-radius: 20120px;
+  background: var(--accent-color);
+  color: var(--secondary-white-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .send-message-section{
+    padding-bottom: 0rem;
+    padding-top: 0;
+  }
+  .Message-desc{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 1rem;
+
+  }
+  .Message-heading{
+    font-size: 2.6rem;
+  }
+  .first-message{
+    gap: 1rem;
+  }
+  .first-message input{
+    width: 151px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  }
+  .first-message input::placeholder,
+   .mail-phone-msg input::placeholder, 
+   .mail-phone-msg textarea::placeholder{
+    font-size: 1.3rem;
+  }
+  .mail-phone-msg input{
+    width: 334px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  }
+  .mail-phone-msg textarea{
+    width: 334px;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    padding: 1rem;
+  height: 100px;
+  }
+  .btn-secondary {
+    width: 350px;
+    height: 62px;
+    margin: 2.3rem auto;
+
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .scetion-pictures {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .dorimon {
+    width: 380px;
+    height: 295px;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .dorimon-img {
+    width: 115px;
+  height: 115px;
+  }
+  .Contact {
+    height: 75px;
+    font-size: 2.6rem;
+  }
+  .Contact-heading {
+    font-size: 2.6rem;
+
+  }
+  .dorimon-img img {
+    width: 50px;
+
+  }
+
+  .dorimon-img .dorimon-image {
+    width: 50px;
+  }
+
+  .dorimon-heading {
+    font-size: 2.6rem;
+    margin-top: 1rem;
+  }
+  .msg-heading {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    display: none;
+  }
+  .FAQs-heading {
+    font-size: 2.6rem;
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .dorimon-desc {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  .span-none {
+    display: none;
+  }
+    
+  .live-chat2 {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .question-desc {
+font-size: 1.4rem;
+  }
+  .dorimon-headings{
+    font-size: 1.8rem;
+ 
+  }
+  .service-helper {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 7rem 7rem 7rem;
+  }
+
+  .section-ten-content {
+    margin: 0 3rem;
+  }
+
+  .section-ten-heading {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .dorimon-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .live-mail {
+    gap: 6rem;
+    align-items: flex-start;
+
+  }
+
+  .fb-mail-cal {
+    margin-left: 0rem;
+  }
+  .send-message-section{
+    padding-bottom: 0rem;
+    padding-top: 0;
+  }
+  .Message-desc{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 4rem;
+
+  }
+  .Message-heading{
+    font-size: 2.6rem;
+  }
+  .first-message{
+    gap: 1rem;
+  }
+  .first-message input{
+    width: 229px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  }
+  .first-message input::placeholder,
+   .mail-phone-msg input::placeholder, 
+   .mail-phone-msg textarea::placeholder{
+    font-size: 1.3rem;
+  }
+  .mail-phone-msg input{
+    width: 474px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  }
+  .mail-phone-msg textarea{
+    width: 474px;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    padding: 1rem;
+  height: 100px;
+  }
+  .btn-secondary {
+    width: 350px;
+    height: 62px;
+    margin: 2.3rem auto;
+
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .service-helper {
+  flex-wrap: wrap;
+  gap: 4rem;
+  }
+  .mail-phone-msg input {
+    width: 690px;
+}
+.mail-phone-msg textarea {
+  width: 711px;
+ 
+}
+.first-message input {
+width: 305px;
+}
+.section-ten-heading {
+font-size: 3.2rem;
+padding: 0 4rem;
+text-align: center;
+
+}
+.live-mail {
+  gap: 13rem;
+}
+.dorimon {
+  width: 229px;
+  height: 313px;
+}
+.dorimon-heading, .msg-heading {
+font-size: 2.2rem;
+
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1150px) {
+  .first-message input {
+    width: 480px;
+}
+.mail-phone-msg textarea ,.mail-phone-msg input {
+  width: 976px;
+}
+.live-mail {
+  gap: 12rem;
+}
+.dorimon {
+  width: 308px;
+  height: 330px;
+}
+}
+@media only screen and (min-width: 275px) and (max-width: 374px) {
+  .order-now {
+    height: 67px;
+}
+.order-now-heading {
+    font-size: 2rem;
+}
+.dorimon {
+  width: 265px;
+  height: 106px;
+  gap: .6rem;
+}
+.dorimon-heading {
+  font-size: 1.6rem;
+}
+.dorimon-desc {
+  font-size: 12px;
+}
+.section-ten-heading {
+  font-size: 2rem;
+}
+.dorimon-imges {
+  width: 97px;
+  height: 97px;
+
+}
+.live-mail {
+  gap: 3rem;
+}
+
+.service-helper {
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem 7rem 2rem 7rem;
+}
+.Message-heading {
+  font-size: 2rem;
+}
+.Message-desc {
+  font-size: 1.4rem;
+  padding: 0 1rem;
+}
+.mail-phone-msg input {
+  width: 267px;
+
+}
+.mail-phone-msg textarea {
+  width: 267px;
+
+}
+.first-message input {
+  width: 127px;
+  height: 36px;
+
+}
+
+.btn-secondary {
+  width: 275px;
+  height: 45px;
+  font-size: 1.6rem;
+}
+.question-desc {
+  text-align: center;
+}
+body{
+  position: relative;
+  top: 61px;
+}
+
+
+
+
+
+}

@@ -1,0 +1,613 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-section-color: #fcf7ef;
+  --primary-container-color: #E1E2DA;
+  --secondary-white-heading: #ffffff;
+  --secondary-color: #385f59;
+  --accent-color: #d75d39;
+}
+
+/* BILLING SHIPPING SECTION */
+.Billing-Shipping-section {
+  background-color: var(--primary-section-color);
+  padding-bottom: 3rem;
+}
+
+.order-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.button-tag {
+  text-decoration: none;
+}
+
+.btn-contact {
+  display: flex;
+  justify-self: center;
+  width: 227px;
+  padding: 9px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 100px;
+  background: var(--primary-container-color);
+  cursor: pointer;
+  transition: background-color .3s ease-in, color .3s ease-in, -webkit-text-fill-color .3s ease-in;
+
+}
+
+
+.contact-button .contact-icon {
+  font-size: 2.5rem;
+}
+
+.contact-button .contact-text {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+
+.contact-button-brown .contact-text-brown {
+  color: var(--secondary-white-heading);
+  font-weight: 700;
+}
+
+.Contact {
+  height: 100px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact-heading {
+  color: var(--secondary-white-heading);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.my-order {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.icon-flex {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .Contact {
+    height: 75px;
+    font-size: 2.6rem;
+  }
+
+  .Contact-heading {
+    font-size: 2.6rem;
+
+  }
+
+  .order-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-button-brown {
+    background: var(--secondary-color);
+  }
+
+  .btn-contact {
+    width: 375px;
+    padding: 20px 10px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-button .contact-text {
+    margin-top: 0rem;
+  }
+
+}
+
+.biling-shiping-section {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.Biling-Shiping {
+  gap: 2rem;
+}
+
+.billing-shiping {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.default-biling {
+  width: 437px;
+  padding: 2rem 0 3rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 95, 89, 0.35);
+  background: var(--primary-container-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.default-heading {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 3rem;
+
+}
+
+.billing-underline {
+  text-decoration: underline;
+  margin-top: 7px;
+}
+
+.default-desc1 {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-left: 3rem;
+}
+
+.default-desc2 {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-left: 3rem;
+}
+
+.save-card {
+  border-radius: 8px;
+  padding-bottom: 3rem;
+  border: 1px solid rgba(56, 95, 89, 0.35);
+  background: var(--primary-container-color);
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+}
+
+
+.Credit-Content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.save-card-heading {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.save-card-btn{
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+.new-card-btn{
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+
+}
+.new-card-heading {
+  color: var(--accent-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.add-new-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.credit-card {
+  margin-top: 2rem;
+  width: 774px;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  background: var(--primary-section-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shipping-order {
+  transform: translateY(-18rem);
+}
+
+.Credit-Content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-star {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.cart-start-content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-star-heading {
+  color: #5E5E5E;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 200px;
+  outline: 0;
+  border: 0;
+  background: 0;
+}
+
+.star-digit {
+  color: #5E5E5E;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 3px;
+  margin-right: -3rem;
+}
+
+.btn-edit {
+  color: var(--accent-color);
+  font-size: 1.6rem;
+  background: 0;
+  cursor: pointer;
+  font-weight: 400;
+  border: 0;
+
+}
+
+.biling-line {
+  width: 91px;
+  transform: translateX(-37px);
+}
+
+.all-order-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.order-content {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.order-line {
+  width: 70px;
+  height: 4px;
+  background: var(--accent-color);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.6rem;
+}
+
+.btn-delete {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: 0;
+}
+
+.btn-delete img {
+  opacity: 0.4;
+
+}
+
+.order-section {
+  padding: 7rem 5rem 5rem 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .order-section {
+
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem;
+
+  }
+
+  .my-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .cart-start-content {
+    align-items: flex-start;
+  }
+
+  .biling-shiping-section {
+    flex-direction: column;
+  }
+
+  .final-large-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.8rem;
+  }
+
+  .order-line {
+    display: none;
+  }
+
+  .order-content {
+    text-align: center;
+  }
+
+  .billing-shiping {
+    flex-direction: column;
+  }
+
+  .default-biling {
+    width: 340px;
+
+  }
+
+  .save-card {
+    width: 340px;
+    height: 290px;
+    background-color: var(--primary-section-color);
+    border: 0;
+    padding: 0;
+
+  }
+
+  .all-order-heading {
+    display: none;
+
+  }
+
+  .add-new-card {
+    padding: 0 1rem;
+  }
+
+  .credit-card {
+    width: 303px;
+    height: 58px;
+    background: var(--primary-container-color);
+    margin-top: 1rem;
+  }
+
+  .card-edit .btn-edit {
+    font-size: 1.6rem;
+
+  }
+
+  .card-star {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .btn-delete {
+    display: none;
+  }
+
+  .card-star-heading {
+    font-size: 14px;
+
+  }
+
+  .card-edit p {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .card-delet img {
+    display: none;
+  }
+
+
+}
+@media screen and (min-width: 481px) and (max-width: 676px) {
+  .Contact {
+    height: 75px;
+    font-size: 2.6rem;
+  }
+
+  .Contact-heading {
+    font-size: 2.6rem;
+
+  }
+
+  .order-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-button-brown {
+    background: var(--secondary-color);
+  }
+
+  .btn-contact {
+    width: 375px;
+    padding: 20px 10px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-button .contact-text {
+    margin-top: 0rem;
+  }
+  .order-section {
+
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem;
+
+  }
+
+  .my-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .cart-start-content {
+    align-items: flex-start;
+  }
+
+  .biling-shiping-section {
+    flex-direction: column;
+  }
+
+  .final-large-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.8rem;
+  }
+
+  .order-line {
+    display: none;
+  }
+
+  .order-content {
+    text-align: center;
+  }
+
+  .billing-shiping {
+    flex-direction: column;
+  }
+
+  .default-biling {
+    width: 340px;
+
+  }
+
+  .save-card {
+    width: 340px;
+    height: 290px;
+    background-color: var(--primary-section-color);
+    border: 0;
+    padding: 0;
+
+  }
+
+  .all-order-heading {
+    display: none;
+
+  }
+
+  .add-new-card {
+    padding: 0 1rem;
+  }
+
+  .credit-card {
+    width: 303px;
+    height: 58px;
+    background: var(--primary-container-color);
+    margin-top: 1rem;
+  }
+
+  .card-edit .btn-edit {
+    font-size: 1.6rem;
+
+  }
+
+  .card-star {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .btn-delete {
+    display: none;
+  }
+
+  .card-star-heading {
+    font-size: 14px;
+
+  }
+
+  .card-edit p {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .card-delet img {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+.my-order{
+  display: none;
+}
+.all-order-heading {
+  display: none;
+
+}
+.default-biling {
+  width: 358px;
+
+}
+.credit-card {
+  width: 627px;
+}
+/* .save-card {
+
+  width: 751px;
+} */
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout-Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@200;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/checkout.css" />
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $('#header').load('header.html')
+        })
+    </script>
+    <main>
+        <section class="checkout-section">
+            <div class="Contact">
+                <h1 class="Contact-heading">Checkout</h1>
+            </div>
+            <div class="shipping-summery">
+                <form action="" class="shippings-detail" method="post">
+                    <h2 class="shippings-detail-heading">Shipping Details</h2>
+                    <input class="same-input-data"  type="email" id="email" placeholder="Email Address*" required>
+                    <div class="shipping-input2 ">
+                        <input type="text" id="first-name" placeholder="First-Name*" required>
+                        <input type="text" id="last-name" placeholder="Last-Name*" required>
+                    </div>
+                    <input class="same-input-data" type="text" id="company-name" placeholder="Company Name" required>
+                    <input class="same-input-data" type="text" id="adress" placeholder="Address" required>
+                    <div class=" shipping-input2 ">
+                        <input type="text" id="city" placeholder="City*" required>
+                        <input type="text" id="status" placeholder="Stuts*" required>
+                    </div>
+                    <input class="same-input-data" type="password" id="password" placeholder="Zip Code*">
+                    <input class="same-input-data" type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="Phone Number*" required>
+                    <div class="shipping-input8">
+                        <a href="Biling-Shiping.html">
+                            <p class="po-box-heading">*We do not ship to PO boxes.</p>
+                        </a>
+                        <div class="biling-shipping">
+                            <input class="checkbox-data" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" class="biling-content"> My billing and shipping address are the
+                                same</label>
+                        </div>
+                    </div>
+                    <h2 class="shippings-detail-heading">Payment Method</h2>
+                    <div class="payment-btn">
+                        <div class="radio-btn">
+                            <input type="radio" id="radio" name="btn">
+                            <label for="btn" class="biling-content">Card</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="btn">
+                            <label for="btn" class="biling-content">PayPal</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="btn">
+                            <label for="btn" class="biling-content">Affirm</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="btn">
+                            <label for="btn" class="biling-content">Other</label>
+                        </div>
+                    </div>
+                    <input class="same-input-data" type="text" id="cardName" placeholder="Name on Card*" required>
+                    <input class="same-input-data" type="tel" id="cardNumber" placeholder="Card number*" required>
+                    <div class=" shipping-input2 ">
+                        <input type="text" id="expireDate" placeholder="Expiry  *" required>
+                       <input type="tel" id="cvv" placeholder="CVV*" maxlength="4" required>
+                    </div>
+                    <div class="term-cond">
+                        <input class="checkbox-data" type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+                        <label for="vehicle2" class="biling-content">I have read and accept all of the quailities
+                            <a href="">
+                                <span class="term-cond-heading">Terms and Conditions</span>
+                            </a>
+                        </label>
+                    </div>
+                        <button type="submit" class="submit-order">Submit Order</button>
+                </form>
+                <div class="Order-summery-inline">
+                    <div class="subtotal-shiping">
+                        <h2 class=" Order-summery-heading">Order Summery</h2>
+                        <div class="subtotal">
+                            <div class="product-plate1">
+                                <button class="plate-btn">
+                                    <img class="final1-grid" src="image/untensil (2).jpg" alt="">
+                                </button>
+                                <h1 class="plate-price-heading">Plate type</h1>
+                            </div>
+                            <span class="product-plate2-content plate-price">$38.10</span>
+                        </div>
+                        <div class="subtotal-type">
+                            <div class="product-plate1">
+                                <button class="cup-btn">
+                                    <img class="final1-grid" src="image/cup10.jpg" alt="">
+                                </button>
+                                <h1 class="cup-price-heading">Cup type</h1>
+                            </div>
+                            <span class="product-plate2-content cup-price">$32.67</span>
+                        </div>
+                        <hr class="hr-white">
+
+                        <div class="subtotal">
+                            <h2 class="subtotal-heading">Subtotal</h2>
+                            <span class="product-plate2-content total-price">$0</span>
+                        </div>
+                        <hr class="hr-white">
+                        <div class="shipping">
+                            <div class="shipping1 subtotal">
+                                <h2 class="subtotal-heading">Shipping Fee</h2>
+                                <span class="product-plate2-content ">$12.00</span>
+                            </div>
+                            <div class="shipping2">
+                                <p class="shipping2-content">* extra Shipping Fee of $30 will be required to
+                                    the states of Hawaii, Alaska, & Puerto Rico.</p>
+                            </div>
+                        </div>
+                        <hr class="hr-white">
+                        <div class="subtotal">
+                            <h2 class="subtotal-heading">Estimated Total</h2>
+                            <span class="final-price">$12.00</span>
+                        </div>
+                    </div>
+                    <a href="order.html">
+                        <button class="proceed-heading ">Submit Order</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $('#footer').load('footer.html')
+        })
+    </script>
+        <script src="js/checkout.js"></script>
+
+</body>
+
+</html>
